@@ -1,0 +1,10 @@
+<tkm-active-session></tkm-active-session>
+
+<section class="mt-8">
+  <h2 class="h1 mb-4">Temario</h2>
+  <div class="flex">
+    <tkm-quarter *ngFor="let quarter of quarters$ | async" [routerLink]="'/session/' + quarter.id" [quarter]="quarter"
+      [hasLinkable]="true">
+    </tkm-quarter>
+  </div>
+</section>

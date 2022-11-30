@@ -1,0 +1,73 @@
+{
+  "logo_text": "Tarjetas",
+  "back": "Atrás",
+  "languages": {
+    "language": "Idioma",
+    "spanish": "Español",
+    "catalan": "Catalán"
+  },
+  "syllabus": "Temario",
+  "courses": {
+    "course": "Curso",
+    "first_course": "1º de infantil",
+    "second_course": "2º de infantil",
+    "third_course": "3º de infantil",
+    "fourth_course": "4º de infantil"
+  },
+  "configuration": "Configuración",
+  "active_session_title": "Vuelve donde lo dejaste",
+  "quarters": {
+    "first_quarter": "1º Trimestre",
+    "second_quarter": "2º Trimestre",
+    "third_quarter": "3º Trimestre"
+  },
+  "sessions": {
+    "session": "Sesión",
+    "sessions": "sesiones",
+    "sessions_of": "Sesiones de",
+    "first_session": "Primera sesión",
+    "second_session": "Segunda sesión",
+    "third_session": "Tercera sesión",
+    "fourth_session": "Cuarta sesión",
+    "fifth_session": "Quinta sesión",
+    "sixth_session": "Sexta sesión",
+    "seventh_session": "Séptima sesión",
+    "eighth_session": "Octava sesión",
+    "ninth_session": "Novena sesión",
+    "tenth_session": "Décima sesión",
+    "eleventh_session": "Undécima sesión",
+    "twelfth_session": "Duodécima sesión",
+    "thirteenth_session": "Decimotercera sesión",
+    "fourteenth_session": "Decimocuarta sesión",
+    "fifteenth_session": "Decimoquinta sesión",
+    "sixteenth_session": "Decimosexta sesión",
+    "seventeenth_session": "Decimoséptima sesión",
+    "eighteenth_session": "Decimoctava sesión",
+    "nineteenth_session": "Decimonovena sesión",
+    "twentieth_session": "Vigésima sesión",
+    "twenty_first_session": "Vigésimo primera sesión",
+    "twenty_second_session": "Vigésimo segunda sesión",
+    "twenty_third_session": "Vigésimo tercera sesión",
+    "twenty_fourth_session": "Vigésimo cuarta sesión",
+    "twenty_fifth_session": "Vigésimo quinta sesión",
+    "twenty_sixth_session": "Vigésimo sexta sesión",
+    "twenty_seventh_session": "Vigésimo séptima sesión",
+    "twenty_eighth_session": "Vigésimo octava sesión",
+    "twenty_ninth_session": "Vigésimo novena sesión",
+    "thirtieth_session": "Trigésima sesión"
+  },
+  "buttons": {
+    "play_ordered": "Reproducción ordenada",
+    "play_random": "Aleatorio",
+    "play_next": "Siguiente sesión",
+    "save_changes": "Guardar cambios",
+    "close_without_saving": "Cerrar sin guardar",
+    "play_video": "Empezar pase"
+  },
+  "before_screen": {
+    "main_title": "Antes de empezar...",
+    "first_column_text": "Asegúrate de tener el volumen activado",
+    "second_column_text": "Los bits pasan automáticamente cada 2 segundos",
+    "third_column_text": "Puedes detener el pase con la barra espaciadora o haciendo clic en la pantalla"
+  }
+}

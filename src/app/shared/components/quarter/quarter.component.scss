@@ -1,0 +1,17 @@
+.tkm-circle-progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.3rem;
+  background-color: #f0f0f0;
+
+  fa-icon {
+    position: relative;
+    top: 1px;
+  }
+
+}

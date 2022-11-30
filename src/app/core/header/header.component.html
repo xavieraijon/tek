@@ -1,0 +1,24 @@
+<header class="tkm-header">
+  <div class="container mx-auto">
+    <h1 class="tkm-logo">{{ 'logo_text' | translate }}</h1>
+    <nav class="tkm-nav">
+      <ul class="tkm-nav__list">
+        <li class="tkm-nav__item">
+          <tkm-button [variant]="variant.Circle">
+            <fa-icon [icon]="faTh"></fa-icon>
+          </tkm-button>
+        </li>
+        <li class="tkm-nav__item">
+          <tkm-button [variant]="variant.Circle" (click)="handleShowSidebar()">
+            <fa-icon [icon]="faSun"></fa-icon>
+          </tkm-button>
+        </li>
+        <li class="tkm-nav__item">
+          <tkm-button [variant]="variant.Circle">
+            <fa-icon [icon]="faSignOutAlt"></fa-icon>
+          </tkm-button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

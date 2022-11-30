@@ -1,0 +1,11 @@
+@use './../../../../assets/styles/settings/variables' as vars;
+
+fa-icon {
+  color: vars.$primary-color;
+}
+
+.tkm-before-start__button {
+  fa-icon {
+    color: white;
+  }
+}

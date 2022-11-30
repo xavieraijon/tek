@@ -1,0 +1,32 @@
+.tkm-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: white;
+
+  &--shadow {
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &--small {
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
+    width: 230px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--medium {
+    padding: 1rem;
+  }
+
+  &--linkable {
+    transition: background-color 0.1s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #e7e4df;
+    }
+  }
+}

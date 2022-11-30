@@ -1,0 +1,17 @@
+@use './../../../assets/styles/settings/variables' as vars;
+
+.tkm-header {
+  background-color: vars.$primary-color;
+
+  .container {
+    height: 5.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.tkm-logo {
+  font-size: 2rem;
+  color: white;
+}

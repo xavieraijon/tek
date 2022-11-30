@@ -1,0 +1,6 @@
+<tkm-header></tkm-header>
+<main class="container mx-auto mt-10">
+  <router-outlet></router-outlet>
+</main>
+<tkm-sidebar *ngIf="handleSidebar$ | async"></tkm-sidebar>
+<tkm-before-screen *ngIf="handleBeforeScreen$ | async"></tkm-before-screen>

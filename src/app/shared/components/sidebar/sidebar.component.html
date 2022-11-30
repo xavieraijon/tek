@@ -1,0 +1,35 @@
+<aside class="tkm-sidebar">
+  <div class="tkm-sidebar__header">
+    <a href="#" (click)="closeSidebar($event)">
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </a>
+    <h2>{{ 'configuration' | translate }}</h2>
+    <div></div>
+  </div>
+  <div class="tkm-sidebar__form-wrapper">
+    <form (submit)="onSubmit()" [formGroup]="configForm" class="tkm-sidebar__form">
+      <div class="w-100">
+        <label for="language">{{ 'languages.language' | translate }}</label>
+        <select name="language" id="language" formControlName="language"
+          class="form-select block w-3/4 mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mx-auto">
+          <option [ngValue]="'es'">{{ 'languages.spanish' | translate }}</option>
+          <option [ngValue]="'ca'">{{ 'languages.catalan' | translate }}</option>
+        </select>
+        <label for="course">{{ 'courses.course' | translate}}</label>
+        <select name="course" id="course" formControlName="course"
+          class="form-select block w-3/4 mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mx-auto">
+          <option value="ep1">{{ 'courses.first_course' | translate}}</option>
+          <option value="ep2">{{ 'courses.second_course' | translate}}</option>
+          <option value="ep3">{{ 'courses.third_course' | translate}}</option>
+          <option value="ep4">{{ 'courses.fourth_course' | translate}}</option>
+        </select>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <tkm-button>{{ 'buttons.save_changes' | translate }}</tkm-button>
+        <a href="#" class="underline mt-4 block" (click)="closeSidebar($event)">{{ 'buttons.close_without_saving' |
+          translate }}</a>
+      </div>
+    </form>
+  </div>
+</aside>
+<div class="overlay"></div>

@@ -1,0 +1,73 @@
+{
+  "logo_text": "Targetes",
+  "back": "Tornar",
+  "languages": {
+    "language": "Idioma",
+    "spanish": "Castellà",
+    "catalan": "Català"
+  },
+  "syllabus": "Temari",
+  "courses": {
+    "course": "Curs",
+    "first_course": "1r d'infantil",
+    "second_course": "2n d'infantil",
+    "third_course": "3r d'infantil",
+    "fourth_course": "4t d'infantil"
+  },
+  "configuration": "Configuració",
+  "active_session_title": "Continua per on ho habies deixat",
+  "quarters": {
+    "first_quarter": "1r Trimestre",
+    "second_quarter": "2n Trimestre",
+    "third_quarter": "3r Trimestre"
+  },
+  "sessions": {
+    "session": "Sessió",
+    "sessions": "sessions",
+    "sessions_of": "Sessions del",
+    "first_session": "Primera sessió",
+    "second_session": "Segona sessió",
+    "third_session": "Tercera sessió",
+    "fourth_session": "Quarta sessió",
+    "fifth_session": "Cinquena sessió",
+    "sixth_session": "Sisena sessió",
+    "seventh_session": "Setena sessió",
+    "eighth_session": "Vuitena sessió",
+    "ninth_session": "Novena sessió",
+    "tenth_session": "Desena sessió",
+    "eleventh_session": "Onzena sessió",
+    "twelfth_session": "Dotzena sessió",
+    "thirteenth_session": "Tretzena sessió",
+    "fourteenth_session": "Catorzena sessió",
+    "fifteenth_session": "Quinzena sessió",
+    "sixteenth_session": "Setzena sessió",
+    "seventeenth_session": "Dissetena sessió",
+    "eighteenth_session": "Divuitena sessió",
+    "nineteenth_session": "Dinovena sessió",
+    "twentieth_session": "Vintena sessió",
+    "twenty_first_session": "Vint-i-primera sessió",
+    "twenty_second_session": "Vint-i-segona sessió",
+    "twenty_third_session": "Vint-i-tercera sessió",
+    "twenty_fourth_session": "Vint-i-quarta sessió",
+    "twenty_fifth_session": "Vint-i-cinquena sessió",
+    "twenty_sixth_session": "Vint-i-sisena sessió",
+    "twenty_seventh_session": "Vint-i-setena sessió",
+    "twenty_eighth_session": "Vint-i-vuitena sessió",
+    "twenty_ninth_session": "Vint-i-novena sessió",
+    "thirtieth_session": "Trentena sessió"
+  },
+  "buttons": {
+    "play_ordered": "Reproduir ordenat",
+    "play_random": "Aleatori",
+    "play_next": "Següent sessió",
+    "save_changes": "Desar canvis",
+    "close_without_saving": "Tancar sense desar",
+    "play_video": "Començar a veure"
+  },
+  "before_screen": {
+    "main_title": "Avanç de començar...",
+    "first_column_text": "Assegurat que tens el volum activat",
+    "second_column_text": "Els bits passen automàticament cada 2 segons",
+    "third_column_text": "Pots aturar el video fent click amb la barra espaiadora o fent click a la pantalla"
+  }
+}

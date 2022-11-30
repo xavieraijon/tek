@@ -1,0 +1,69 @@
+@use './../../../../assets/styles/settings/variables' as vars;
+
+.tkm-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.05s ease-in-out;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  ::ng-deep.ng-fa-icon {
+    margin-right: 1rem;
+  }
+
+  &.default {
+    background-color: vars.$secondary-color;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 0 darken(vars.$secondary-color, 20%);
+
+    &:hover {
+      background-color: darken(vars.$secondary-color, 10%);
+      box-shadow: 0 4px 0 0 darken(vars.$secondary-color, 30%);
+    }
+  }
+
+  &.default-outline {
+    background-color: transparent;
+    color: vars.$secondary-color;
+    box-shadow: 0 0 0 2px inset vars.$secondary-color;
+    border-radius: 5px;
+    font-weight: normal;
+
+    &:hover {
+      background-color: vars.$secondary-color;
+      color: white;
+    }
+  }
+
+  &.circle {
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    justify-content: center;
+    background-color: white;
+    font-size: 1.5rem;
+    color: vars.$primary-color;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.05s ease-in-out;
+
+    &:hover {
+      background-color: vars.$secondary-color;
+      color: white;
+    }
+
+    &:active {
+      box-shadow: none;
+      top: 4px;
+    }
+
+    ::ng-deep.ng-fa-icon {
+      position: relative;
+      top: 1px;
+      margin-right: 0;
+    }
+  }
+}

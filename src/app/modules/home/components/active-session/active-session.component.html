@@ -1,0 +1,30 @@
+<tkm-card>
+  <h2 class="mb-2">{{ 'active_session_title' | translate }}</h2>
+  <p class="mb-8">
+    {{ current.quarter.title | translate }} - {{ 'sessions.session' | translate }} {{ current.session.id }},
+    {{ current.session.title | translate}}
+  </p>
+  <div class="flex justify-start">
+    <ul class="tkm-nav__list">
+      <li class="tkm-nav__item">
+        <tkm-button [variant]="variants.Default" (click)="showNextSessionFromCurrent()">
+          <fa-icon [icon]="faPlay"></fa-icon>
+          {{ 'buttons.play_ordered' | translate }}
+        </tkm-button>
+      </li>
+      <li class="tkm-nav__item">
+        <tkm-button [variant]="variants.DefaultOutline" (click)="showRandomSession()">
+          <fa-icon [icon]="faRandom"></fa-icon>
+          {{ 'buttons.play_random' | translate }}
+        </tkm-button>
+      </li>
+      <li class="tkm-nav__item">
+        <tkm-button [variant]="variants.DefaultOutline" (click)="showNextSession()">
+          <fa-icon [icon]="faShareSquare"></fa-icon>
+          {{ 'buttons.play_next' | translate }}
+        </tkm-button>
+      </li>
+    </ul>
+
+  </div>
+</tkm-card>

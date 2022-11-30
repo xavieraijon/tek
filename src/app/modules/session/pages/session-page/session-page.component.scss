@@ -1,0 +1,119 @@
+@use './../../../../../assets/styles/settings/variables' as vars;
+
+.tkm-grid {
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: 230px 1fr;
+  grid-gap: 1.5rem;
+}
+
+.tkm-left-panel {
+  grid-area: left;
+}
+
+.tkm-right-panel {
+  grid-area: right;
+}
+
+.tkm-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  background-color: #ED9940;
+  color: white;
+  border-radius: 3px;
+  line-height: 1;
+}
+
+.tkm-session__list {
+  .tkm-session__item {
+    padding: 1rem 1.5rem;
+    height: 55px;
+
+    strong {
+      margin-right: 0.5rem;
+    }
+
+    .tkm-session__item__actions {
+      display: flex;
+      align-items: center;
+
+      .tkm-session__action-play {
+        display: none;
+      }
+
+      .tkm-session__item__play {
+        padding: 0.25rem 0.8rem 0.25rem 1rem;
+        background-color: white;
+        border-radius: 5px;
+
+        fa-icon {
+          color: vars.$secondary-color;
+        }
+      }
+    }
+
+    &.has-not-viewed {
+      fa-icon {
+        color: #e0e0e0;
+      }
+
+      &:hover {
+        fa-icon {
+          color: vars.$secondary-color;
+        }
+      }
+    }
+
+    &.active {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      color: white;
+      background-color: vars.$secondary-color;
+
+      fa-icon {
+        color: white;
+      }
+
+      &:hover {
+        fa-icon {
+          color: white;
+        }
+
+        .tkm-session__item__actions {
+          .tkm-session__action-play {
+            display: flex;
+          }
+
+          .tkm-session__action-default {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      background-color: #f5f5f5;
+
+      fa-icon {
+        color: vars.$secondary-color;
+      }
+
+      &.active {
+        background-color: vars.$secondary-color;
+      }
+
+      .tkm-session__item__actions {
+        .tkm-session__action-play {
+          display: flex;
+
+        }
+
+        .tkm-session__action-default {
+          display: none;
+        }
+      }
+    }
+  }
+}

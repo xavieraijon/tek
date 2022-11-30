@@ -1,0 +1,7 @@
+<button class="tkm-button" [ngClass]="{
+    'default': variant === variants.Default,
+    'circle': variant === variants.Circle,
+    'default-outline': variant === variants.DefaultOutline
+  }">
+  <ng-content></ng-content>
+</button>

@@ -1,0 +1,45 @@
+<a href="#" routerLink="/">
+  <fa-icon [icon]="faArrowLeft"></fa-icon>
+  {{ 'back' | translate }}
+</a>
+<section class="tkm-grid mt-10" *ngIf="quarter$ | async as quarter">
+  <div class="tkm-left-panel">
+    <tkm-quarter [quarter]="quarter"></tkm-quarter>
+  </div>
+  <div class="tkm-right-panel">
+    <tkm-card>
+      <div class="flex justify-between border-b-2 border-b-slate-300 px-6 pb-4 -ml-6 -mr-6 -mt-2">
+        <strong>{{ 'sessions.sessions_of' | translate }} {{ quarter.title | translate }}</strong>
+        <div class="tkm-badge">
+          {{ quarterViewedSessionsNumber$ | async }}/{{ quarterSessionsNumber$ | async }}
+        </div>
+      </div>
+      <div class="overflow-y-auto h-[400px] -ml-6 -mr-6">
+        <ul class="tkm-session__list">
+          <li *ngFor="let session of sessions$ | async"
+            [ngClass]="{'has-not-viewed': !session.viewed, 'active': session.current }"
+            class="tkm-session__item flex justify-between items-center">
+            <div class="tkm-session__item__description">
+              <strong>{{ session.id }}</strong>
+              {{ session.title | translate }}
+            </div>
+            <div class="tkm-session__item__actions">
+              <div class="tkm-session__action-play items-center">
+                <fa-icon [icon]="faRandom"></fa-icon>
+                <button class="tkm-session__item__play ml-4" (click)="showSession(session)">
+                  <fa-icon [icon]="faPlay"></fa-icon>
+                </button>
+              </div>
+
+              <div class="tkm-session__action-default mr-3">
+                <fa-icon *ngIf="session.viewed" [icon]="faEye"></fa-icon>
+                <fa-icon *ngIf="!session.viewed" [icon]="faEyeSlash"></fa-icon>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </tkm-card>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+@use './../settings' as vars;
+@import url('https://fonts.google apis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: vars.$body-font-family;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3B3B3B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$heading-font-family;
+}
+
+h1,
+.h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}

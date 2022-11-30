@@ -1,0 +1,11 @@
+.tkm-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .tkm-nav__item {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}

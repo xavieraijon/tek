@@ -1,0 +1,11 @@
+<tkm-card [hasShadow]="true" [hasSmall]="true" [hasLinkable]="hasLinkable">
+  <div class="mr-4">
+    <h3>{{ quarter.title | translate }}</h3>
+    <span>{{ quarterViewedSessionsNumber$ | async }}/{{ quarterSessionsNumber$ | async }} {{ 'sessions.sessions' |
+      translate }}</span>
+  </div>
+  <div class="tkm-circle-progress-bar w-10 h-10"
+    [ngStyle]="{'background': 'conic-gradient(#ED9940 ' + progress + 'deg, #f0f0f0 0deg)'}">
+    <fa-icon [icon]="faCheck" *ngIf="progress === 360"></fa-icon>
+  </div>
+</tkm-card>
